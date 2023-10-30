@@ -1,36 +1,37 @@
 import React from "react";
-import profileImg from "../../public/assets/MyImage.png";
+import profileImg from "../../public/assets/MyImage.jpeg";
 import { Link } from "react-scroll";
 import Image from "next/image";
 
 const HomeScreen = () => {
   return (
-    <div className="bg-[var(--background-color)] min-h-[80vh] w-full flex items-center">
-      <div className="homescreen-container max-w-screen-xl mx-auto w-full flex items-center md:flex-col-reverse md:mt-5 md:text-center">
-        <div className="heading flex-4 mt-5 md:mt-20">
-          <p className="text-[var(--accent-color)]">👋 Hi, I am Shreyas Kothavale.</p>
-          <h1 className="text-[var(--accent-color)] text-9xl md:text-5xl">Front-End Developer</h1>
-          <p className="text-[var(--accent-color)] text-xl font-normal">
-            A self-motivated frontend web developer from
-            Maharashtra, India. Interested in exploring things, I like to work on
-            exciting projects.
+    <div className="homescreen my-8 md:my-16 lg:my-28">
+      <div className="homescreen-container">
+        <div className="heading">
+          <p >👋 Hi, I am Pawan Kumar.</p>
+          <h1 className="font-bold">Front-End Engineer</h1>
+          <p >
+            With over 2+ years of hands-on experience, I've been instrumental in crafting web applications🖥 that are scalable, mobile-responsive, and maintainable.
+            My expertise lies in web development, with a focus on creating visually appealing and flexible website designs. Dive into my GitHub📒 to explore my contributions and projects.
           </p>
-          <div className="contact-links flex gap-x-12 items-center justify-center md:justify-center">
+          <div className="contact-links">
             <Link
+              className="contactbtn"
               to="contact"
               smooth={true}
               duration={500}
-              className="contactbtn bg-[var(--button-color)] text-[var(--button-text-color)] rounded-lg py-3 px-6"
             >
               Contact Me
             </Link>
-            {/* <a href={Resume} target="_blank" download className="resumeBtn border-[var(--button-color)] text-[var(--button-color)] rounded-lg py-3 px-6">
+            <a
+              //  href={Resume}
+              target="_blank" download className="resumeBtn ">
               Resume
-            </a> */}
+            </a>
           </div>
         </div>
-        <div className="profile flex-2 justify-end">
-          <Image className="w-[350px] rounded-full md:w-[200px]" src={profileImg} alt="" />
+        <div className="profile">
+          <Image src={profileImg} alt="" />
         </div>
       </div>
     </div>

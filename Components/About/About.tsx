@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutImg from "../../public/assets/clement-helardot-95YRwf6CNw8-unsplash.jpg";
 import Image from "next/image";
 
 const About = () => {
+
   return (
     <div className="bg-gray-100 w-full min-h-[80vh] flex items-center">
       <div className="about-container max-w-screen-xl mx-auto w-full flex items-center lg:p-4">

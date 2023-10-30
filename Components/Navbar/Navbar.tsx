@@ -1,12 +1,21 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import {
+  BsGithub,
+  BsLinkedin,
+  BsMoonFill,
+  BsSun,
+  BsSunFill,
+  BsX,
+  BsXLg,
+} from "react-icons/bs";
 import { HiSun, HiMoon, HiBars3, HiXMark } from "react-icons/hi2";
-
+import { RxHamburgerMenu } from "react-icons/rx";
+// const toggleSound = require('/public/sounds/switch.mp3');
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  // const switchSound = new Audio(toggleSound);
+  // const switchSound = new Audio(toggleSound.default);
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
     const theme = isDarkMode ? "light" : "dark";
@@ -28,20 +37,113 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-20 w-full flex items-center sticky top-0 z-50">
-      <div className="absolute w-full h-full bg-gradient-to-r from-[#44ff9a] via-[#8b44ff] to-[#ebff70] blur-[1.2rem] opacity-30"></div>
-      <div className="relative w-full h-full backdrop-blur-md bg-[var(--navbar-color)] flex">
-        <div className={`w-full max-w-screen-xl mx-auto flex items-center px-5 ${isVisible ? "active" : ""}`}>
-          <div className="text-[var(--accent-color)] text-lg font-bold flex-1">Shreyas.</div>
-          <div className="menu cursor-pointer z-50">
+    <div className="Navbar">
+      <div className="bg-gradient"></div>
+      <div className="navbar-container">
+        <div className={isVisible ? "active navbar" : "navbar"}>
+          <div className="logo">Pawan Kumar</div>
+          <div className="menu">
             {isVisible ? (
-              <HiXMark className="text-[var(--accent-color)] text-3xl" onClick={closeMenu} />
+              <HiXMark
+                style={{
+                  color: "var(--accent-color)",
+                  fontWeight: "bold",
+                }}
+                size={30}
+                onClick={closeMenu}
+              />
             ) : (
-              <HiBars3 className="text-[var(--accent-color)] text-3xl" onClick={() => setIsVisible(true)} />
+              <HiBars3
+                style={{
+                  color: "var(--accent-color)",
+                  // fontWeight: "bold",
+                  // border: "2px solid gray",
+                  // borderRadius: "5px",
+                  // padding: 5,
+                }}
+                size={30}
+                onClick={() => {
+                  setIsVisible(true);
+                }}
+              />
             )}
           </div>
-          <div className={`links flex flex-2 items-center ${isVisible ? "absolute w-[60vw] h-screen top-0 right-0 bg-[var(--background-color)] flex-col p-20 shadow-md transition-transform transform translate-x-0" : "transform translate-x-full transition-transform opacity-0 invisible"}`}>
-            {/* navbar-links and other components... (unchanged) */}
+          <div className="links">
+            <div className="navbar-links">
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                className="a"
+                onClick={closeMenu}
+              >
+                Home
+              </Link>
+              <Link
+                to="skills"
+                smooth={true}
+                duration={500}
+                className="a"
+                onClick={closeMenu}
+              >
+                Skills
+              </Link>
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                className="a"
+                onClick={closeMenu}
+              >
+                About
+              </Link>
+              <Link
+                to="projects"
+                smooth={true}
+                duration={500}
+                className="a"
+                onClick={closeMenu}
+              >
+                Projects
+              </Link>
+            </div>
+            <div className="social-link">
+              <div className="profiles">
+                <a href="https://github.com/engineerpawangupta" target="_blank">
+                  <BsGithub size={24} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/pawan-kumar-5490a3172"
+                  target="_blank"
+                >
+                  <BsLinkedin size={24} />
+                </a>
+                <a
+                  onClick={toggleTheme}
+                  style={{ cursor: "pointer" }}
+                  className="desktopIcon"
+                >
+                  {isDarkMode ? (
+                    <HiSun size={24} />
+                  ) : (
+                    <div>
+                      {" "}
+                      <HiMoon size={24} />
+                    </div>
+                  )}
+                </a>
+              </div>
+              <div
+                className={isDarkMode ? "active mobile-icon" : "mobile-icon"}
+              >
+                <div className="lightMode modes" onClick={lightMode}>
+                  <HiSun size={24} /> <p>Light </p>
+                </div>
+                <div className="darkMode modes" onClick={darkMode}>
+                  <HiMoon size={24} /> <p>Dark</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
