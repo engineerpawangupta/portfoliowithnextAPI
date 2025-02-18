@@ -1,12 +1,12 @@
 import Counter from "./Counter";
 
 const homeData = {
-  firstName: "James",
-  lastName: "Smith",
-  designation: "Web Developer",
-  address: "New York",
+  firstName: "Pawan",
+  lastName: "Kumar",
+  designation: "Frontend Engineer",
+  address: "India",
   img: "img/hero/2.jpg",
-  bio: "Jodi kokhono vul hoye jai tumi oporadh nio na ptate velit esse cillum dolore",
+  bio: "I am a frontend engineer with a passion for building user-friendly and efficient web applications. I have a strong understanding of HTML, CSS, and JavaScript and am proficient in using React to create dynamic and interactive web experiences.",
   numberOfProject: 800,
   numberofyear: 12,
 };
@@ -16,7 +16,7 @@ const Home = () => {
     <div className="devman_tm_section" id="home">
       <div className="devman_tm_hero">
         <div className="background">
-          <div className="image" data-img-url="img/hero/1.jpg" />
+          <div className="image" data-img-url="img/hero/backgroundHero.jpg" />
         </div>
         <div className="container">
           <div className="content">
@@ -46,7 +46,7 @@ const Home = () => {
               <h3 className="stroke_1">{homeData.firstName}</h3>
               <h3 className="stroke_2">{homeData.lastName}</h3>
             </div>
-            <div className="right">
+            {/* <div className="right">
               <div className="image">
                 <img src="img/thumbs/53-61.jpg" alt="" />
                 <div className="main" data-img-url={homeData.img} />
@@ -82,7 +82,7 @@ const Home = () => {
                   <img src="img/hero/circle.png" alt="" />
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
