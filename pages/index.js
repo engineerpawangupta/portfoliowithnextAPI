@@ -25,7 +25,7 @@ const Index = () => {
   return (
     <Layout>
       <Head>
-        <title>Devman | Home</title>
+        <title>Pawan</title>
       </Head>
       <MobileHeader />
       <Header />
@@ -35,13 +35,13 @@ const Index = () => {
       <CounterSection />
       <Portfolio />
       <Skills />
-      <Service />
-      <Process />
-      <Testimonials />
-      <Partners />
+      {/* <Service /> */}
+      {/* <Process /> */}
+      {/* <Testimonials /> */}
+      {/* <Partners /> */}
       <Contact />
-      <Blog />
-      <Copyright />
+      {/* <Blog /> */}
+      {/* <Copyright /> */}
       <Mouse />
       <ScrollTop />
     </Layout>

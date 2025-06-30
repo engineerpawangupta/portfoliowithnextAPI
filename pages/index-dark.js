@@ -40,13 +40,13 @@ const IndexDark = () => {
       <CounterSection />
       <Portfolio />
       <Skills />
-      <Service />
-      <Process />
-      <Testimonials />
-      <Partners dark />
+      {/* <Service /> */}
+      {/* <Process /> */}
+      {/* <Testimonials /> */}
+      {/* <Partners dark /> */}
       <Contact />
-      <Blog />
-      <Copyright />
+      {/* <Blog /> */}
+      {/* <Copyright /> */}
       <Mouse />
       <ScrollTop />
     </Layout>

@@ -14,8 +14,9 @@ const Skills = () => {
             <span>My Skills</span>
             <h3>I Develop Skills Regularly</h3>
             <p>
-              Dliquip ex ea commo do conse namber onequa ute irure dolor in
-              reprehen derit in voluptate
+              Continuously expanding my expertise in modern web technologies, 
+              focusing on React.js, JavaScript, and full-stack development to 
+              create innovative and user-centric applications.
             </p>
           </div>
           <div className="skills_wrapper">
@@ -27,7 +28,7 @@ const Skills = () => {
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">WordPress</span>
+                    <span className="label">React.js</span>
                     <span className="number">95%</span>
                   </span>
                   <div className="background">
@@ -42,23 +43,8 @@ const Skills = () => {
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">Joomla</span>
-                    <span className="number">75%</span>
-                  </span>
-                  <div className="background">
-                    <div className="bar">
-                      <div className="bar_in" />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="skillsInner___ progress_inner"
-                  data-value={90}
-                  data-color="#142eb5"
-                >
-                  <span>
-                    <span className="label">Drupal</span>
-                    <span className="number">90%</span>
+                    <span className="label">Next.js</span>
+                    <span className="number">80%</span>
                   </span>
                   <div className="background">
                     <div className="bar">
@@ -72,42 +58,27 @@ const Skills = () => {
               <div className="dodo_progress">
                 <div
                   className="skillsInner___ progress_inner"
-                  data-value={70}
-                  data-color="#142eb5"
-                >
-                  <span>
-                    <span className="label">Python</span>
-                    <span className="number">70%</span>
-                  </span>
-                  <div className="background">
-                    <div className="bar">
-                      <div className="bar_in" />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="skillsInner___ progress_inner"
-                  data-value={80}
-                  data-color="#142eb5"
-                >
-                  <span>
-                    <span className="label">PHP</span>
-                    <span className="number">80%</span>
-                  </span>
-                  <div className="background">
-                    <div className="bar">
-                      <div className="bar_in" />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="skillsInner___ progress_inner"
                   data-value={60}
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">JavaScript</span>
+                    <span className="label">Python</span>
                     <span className="number">60%</span>
+                  </span>
+                  <div className="background">
+                    <div className="bar">
+                      <div className="bar_in" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="skillsInner___ progress_inner"
+                  data-value={90}
+                  data-color="#142eb5"
+                >
+                  <span>
+                    <span className="label">JavaScript</span>
+                    <span className="number">90%</span>
                   </span>
                   <div className="background">
                     <div className="bar">

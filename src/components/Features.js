@@ -2,17 +2,17 @@ const features_list = [
   {
     title: "Dedication",
     icon: "img/svg/design.svg",
-    text: "Sed do eiusmod tempor incididunt ut labore ullamco laboris nisi ut aliquip ex ea commo do conse namber onequat.",
+    text: "Success begins with unwavering dedication. It's the commitment to consistently put in the effort, overcome challenges, and push beyond limits. Dedication fuels perseverance, ensuring that every step taken leads closer to excellence.",
   },
   {
     title: "Smart Work",
     icon: "img/svg/development.svg",
-    text: "Sed do eiusmod tempor incididunt ut labore ullamco laboris nisi ut aliquip ex ea commo do conse namber onequat.",
+    text: "Efficiency is just as important as effort. Smart work means optimizing time, leveraging technology, and strategizing effectively to achieve more with less. It's about focusing on what truly matters and finding innovative ways to accomplish goals efficiently.",
   },
   {
     title: "Intelligence",
     icon: "img/svg/landing.svg",
-    text: "Sed do eiusmod tempor incididunt ut labore ullamco laboris nisi ut aliquip ex ea commo do conse namber onequat.",
+    text: "Beyond hard work and strategy, intelligence drives success. It involves critical thinking, problem-solving, and making informed decisions. Intelligence empowers individuals to adapt, innovate, and stay ahead in a competitive world.",
   },
 ];
 const Features = () => {

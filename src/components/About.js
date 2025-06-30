@@ -1,9 +1,10 @@
 const aboutData = {
-  designation: "Developer",
-  title: "I Develop Application that Help People",
+  designation: "Frontend Engineer",
+  title: "I Develop Applications that Empower and Connect People",
   text: [
-    "Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat cupidatat",
-    "Krnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis",
+    "With over four years of experience, I specialize in developing AI-powered applications and platforms that solve real-world problems. I led the development of IdeaFloat, an AI-powered business validation tool that integrates ChatGPT-3.5, ChatGPT-4, and external APIs to provide strategic recommendations using market trends, customer feedback, and business analytics. The platform enhances decision-making through data-driven insights via DataForSEO, processing extensive data to identify patterns, track SEO performance, and conduct competitive analysis.",
+    "I've successfully built and deployed multiple full-stack applications including ALAUTUN, a comprehensive freight logistics platform connecting shippers, carriers, and owner-operators. This involved developing carrier and shipper portals, integrating Stream Chat for real-time communication, implementing Stripe payment gateway for secure transactions, and setting up Firebase push notifications. I also developed Thrively Care, a healthcare platform connecting patients with professional healthcare providers and therapists, featuring online booking, video call functionality, and in-person appointment scheduling.",
+    "My technical expertise includes React.js, Material-UI (MUI), Tailwind CSS, and JavaScript for creating intuitive user interfaces. I implement Redux Toolkit for efficient state management and integrate Firebase Services including Push Notifications and Real-Time Database to enhance real-time interactivity. I've also developed and optimized real-time chat functionality using GetStream.io, ensuring seamless communication within platforms while maintaining security and performance standards.",
   ],
   skillIcons: [
     { name: "joomla", icon: "img/svg/joomla.svg" },
@@ -22,13 +23,13 @@ const About = () => {
             <div className="left">
               <div className="image_wrap">
                 <img src="img/thumbs/64-49.jpg" alt="" />
-                <div className="main" data-img-url="img/about/1.jpg" />
+                <div className="main" data-img-url="img/about/image1.webp" />
                 <div className="extra_image">
                   <div className="image_inner">
                     <img src="img/thumbs/1-1.jpg" alt="" />
                     <div
                       className="main_extra"
-                      data-img-url="img/about/2.jpg"
+                      data-img-url="img/about/image2.webp"
                     />
                   </div>
                 </div>
