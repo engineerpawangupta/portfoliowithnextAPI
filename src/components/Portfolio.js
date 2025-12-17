@@ -28,16 +28,10 @@ const Portfolio = () => {
                     <div className="content">
                       <div className="details">
                         <span className="category">
-                          <a href="#">Youtube</a>
+                          <a href="https://ideafloat.com/" target="_blank" rel="noopener noreferrer">Youtube</a>
                         </span>
-                        <h3 className="title">
-                          <a href="#">
-                            Web Application for
-                            <br /> Desiverse
-                          </a>
-                        </h3>
                         <span className="view_project">
-                          <a href="#">
+                          <a href="https://ideafloat.com/" target="_blank" rel="noopener noreferrer">
                             View Project <i className="icon-right-big" />
                           </a>
                         </span>
@@ -45,8 +39,8 @@ const Portfolio = () => {
                     </div>
                     <div className="overlay" />
                     <a
-                      className="devman_tm_full_link popup-youtube"
-                      href="https://www.youtube.com/watch?v=7e90gBu4pas"
+                      className="devman_tm_full_link"
+                      href="https://ideafloat.com/" target="_blank" rel="noopener noreferrer"
                     />
                   </div>
                 </li>
@@ -59,16 +53,10 @@ const Portfolio = () => {
                     <div className="content">
                       <div className="details">
                         <span className="category">
-                          <a href="#">Vimeo</a>
+                          <a href="https://www.goodaction.com/" target="_blank" rel="noopener noreferrer">Vimeo</a>
                         </span>
-                        <h3 className="title">
-                          <a href="#">
-                            Web Application for
-                            <br /> Desiverse
-                          </a>
-                        </h3>
                         <span className="view_project">
-                          <a href="#">
+                          <a href="https://www.goodaction.com/" target="_blank" rel="noopener noreferrer">
                             View Project <i className="icon-right-big" />
                           </a>
                         </span>
@@ -76,8 +64,8 @@ const Portfolio = () => {
                     </div>
                     <div className="overlay" />
                     <a
-                      className="devman_tm_full_link popup-vimeo"
-                      href="https://vimeo.com/337293658"
+                      className="devman_tm_full_link"
+                      href="https://www.goodaction.com/" target="_blank" rel="noopener noreferrer"
                     />
                   </div>
                 </li>
@@ -90,16 +78,10 @@ const Portfolio = () => {
                     <div className="content">
                       <div className="details">
                         <span className="category">
-                          <a href="#">Soundcloud</a>
+                          <a href="https://thrivelycare.com/home" target="_blank" rel="noopener noreferrer">Soundcloud</a>
                         </span>
-                        <h3 className="title">
-                          <a href="#">
-                            Web Application for
-                            <br /> Desiverse
-                          </a>
-                        </h3>
                         <span className="view_project">
-                          <a href="#">
+                          <a href="https://thrivelycare.com/home" target="_blank" rel="noopener noreferrer">
                             View Project <i className="icon-right-big" />
                           </a>
                         </span>
@@ -107,8 +89,8 @@ const Portfolio = () => {
                     </div>
                     <div className="overlay" />
                     <a
-                      className="devman_tm_full_link soundcloude_link mfp-iframe audio"
-                      href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                      className="devman_tm_full_link"
+                      href="https://thrivelycare.com/home" target="_blank" rel="noopener noreferrer"
                     />
                   </div>
                 </li>
@@ -121,16 +103,10 @@ const Portfolio = () => {
                     <div className="content">
                       <div className="details">
                         <span className="category">
-                          <a href="#">Details</a>
+                          <a href="https://radiansys.com/" target="_blank" rel="noopener noreferrer">Details</a>
                         </span>
-                        <h3 className="title">
-                          <a href="#">
-                            Web Application for
-                            <br /> Desiverse
-                          </a>
-                        </h3>
                         <span className="view_project">
-                          <a href="#">
+                          <a href="https://radiansys.com/" target="_blank" rel="noopener noreferrer">
                             View Project <i className="icon-right-big" />
                           </a>
                         </span>
@@ -138,8 +114,8 @@ const Portfolio = () => {
                     </div>
                     <div className="overlay" />
                     <a
-                      className="devman_tm_full_link portfolio_popup c-pointer"
-                      onClick={() => setPopup(true)}
+                      className="devman_tm_full_link"
+                      href="https://radiansys.com/" target="_blank" rel="noopener noreferrer"
                     />
                   </div>
                 </li>
