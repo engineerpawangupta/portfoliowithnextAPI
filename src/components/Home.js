@@ -6,7 +6,7 @@ const homeData = {
   designation: "Frontend Engineer",
   address: "India",
   img: "img/hero/2.jpg",
-  bio: "I am a Frontend Engineer with a strong passion for building scalable, user-centric web applications. I have a solid foundation in HTML, CSS, and JavaScript, and specialize in React and Next.js to create dynamic, responsive, and high-performance user interfaces. I focus on writing clean, efficient code and delivering seamless user experiences that align with both user needs and business objectives.",
+  bio: "I am a Frontend Engineer passionate about building scalable, user-focused web applications. I have a solid foundation in HTML, CSS, and JavaScript, and specialize in React and Next.js to craft dynamic, responsive interfaces. I focus on writing clean, efficient code and delivering seamless experiences that align with both user needs and business goals.",
   numberOfProject: 800,
   numberofyear: 12,
 };

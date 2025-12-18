@@ -1177,18 +1177,24 @@ h6 {
 }
 .devman_tm_portfolio ul li .content {
   width: 100%;
-  height: auto;
-  clear: both;
-  float: left;
+  height: 100%;
   position: relative;
   z-index: 2;
-  padding: 150px 95px;
+  padding: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  min-height: 360px;
+  box-sizing: border-box;
 }
 .devman_tm_portfolio ul li .details {
-  float: left;
+  float: none;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 .devman_tm_portfolio ul li:nth-child(2n) .details {
-  float: right;
+  float: none;
 }
 .devman_tm_portfolio ul li .category {
   margin-bottom: 4px;
@@ -1211,7 +1217,7 @@ h6 {
   display: inline-block;
 }
 .devman_tm_portfolio ul li .view_project {
-  display: inline-block;
+  display: inline-flex;
 }
 .devman_tm_portfolio ul li .view_project a {
   text-decoration: none;
@@ -1220,12 +1226,59 @@ h6 {
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(24, 24, 32, 0.85), rgba(16, 185, 129, 0.9));
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(14px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.devman_tm_portfolio ul li .view_project a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.95), rgba(16, 185, 129, 0.95));
+}
+.devman_tm_portfolio ul li .view_project a::after {
+  content: "";
+  position: absolute;
+  top: -30%;
+  bottom: -30%;
+  width: 40%;
+  left: -50%;
+  transform: skewX(-20deg) translateX(-120%);
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.55) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0.7;
+}
+.devman_tm_portfolio ul li .view_project a:hover::after {
+  animation: shineSweep 0.8s ease forwards;
 }
 .devman_tm_portfolio ul li .view_project i {
-  color: var(--main-color);
+  color: #fff;
   position: relative;
   top: -1px;
+  transition: transform 0.3s ease;
+}
+.devman_tm_portfolio ul li .view_project a:hover i {
+  transform: translateX(6px);
+}
+
+@keyframes shineSweep {
+  from {
+    transform: skewX(-20deg) translateX(-120%);
+  }
+  to {
+    transform: skewX(-20deg) translateX(220%);
+  }
 }
 .devman_tm_full_link {
   position: absolute;
@@ -3311,7 +3364,8 @@ h6 {
     font-size: 30px;
   }
   .devman_tm_portfolio ul li .content {
-    padding: 100px 20px;
+    padding: 30px;
+    min-height: 300px;
   }
   .devman_tm_portfolio ul li .category a {
     font-size: 16px;
