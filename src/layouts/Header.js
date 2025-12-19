@@ -1,14 +1,44 @@
-import { useEffect } from "react";
-import { scrollSection, stickyNav } from "../utilits";
+import { useEffect, useState } from "react";
+import { scrollSection } from "../utilits";
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
   useEffect(() => {
-    window.addEventListener("scroll", stickyNav);
-    window.addEventListener("scroll", scrollSection);
+    setIsMounted(true);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      // Check if desktop (width >= 1040px based on existing media queries)
+      const isDesktop = window.innerWidth >= 1040;
+
+      if (isDesktop) {
+        setIsScrolled(currentScrollY > 70);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", scrollSection);
+    window.addEventListener("resize", handleScroll);
+    handleScroll(); // Initial check
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", scrollSection);
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, []);
+
+  const headerClasses = `devman_tm_header ${isScrolled ? "scrolled" : ""}`;
+
   return (
-    <div className="devman_tm_header">
+    <div className={headerClasses}>
+      <div className={`header_overlay ${isScrolled ? "active" : ""}`} aria-hidden="true" />
       <div className="container">
         <div className="header_inner">
           <div className="logo">

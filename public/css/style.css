@@ -391,14 +391,70 @@ h6 {
   left: 0px;
   right: 0px;
   z-index: 10;
-  padding: 30px 0px;
+  padding: 30px 40px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
 
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: margin, padding, border-radius, box-shadow, width, max-width, background-color, border-color;
 }
+
+/* Overlay for blur effect */
+.header_overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: transparent;
+  border-radius: inherit;
+  
+  -webkit-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header_overlay.active {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Scrolled state - floating pill navbar */
+.devman_tm_header.scrolled {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 16px auto 0 auto;
+  padding: 10px 30px;
+  border-radius: 50px;
+  max-width: 1200px;
+  width: calc(100% - 40px);
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 17px 14px 40px 0px rgba(0, 0, 0, 0.13);
+}
+
+.devman_tm_header.scrolled .container {
+  padding: 0;
+}
+
+.devman_tm_header.scrolled .header_inner {
+  gap: 20px;
+}
+
+.devman_tm_header.scrolled .menu ul li {
+  margin-right: 25px;
+}
+
+/* Legacy animate class for backwards compatibility */
 .devman_tm_header.animate {
   padding: 25px 0px;
   background-color: #fff;
@@ -414,6 +470,11 @@ h6 {
 }
 .devman_tm_header .logo img {
   max-width: 200px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .devman_tm_header .logo .light {
   display: block;
@@ -421,10 +482,12 @@ h6 {
 .devman_tm_header .logo .dark {
   display: none;
 }
-.devman_tm_header.animate .logo .light {
+.devman_tm_header.animate .logo .light,
+.devman_tm_header.scrolled .logo .light {
   display: none;
 }
-.devman_tm_header.animate .logo .dark {
+.devman_tm_header.animate .logo .dark,
+.devman_tm_header.scrolled .logo .dark {
   display: block;
 }
 .devman_tm_header .menu ul {
@@ -471,11 +534,17 @@ h6 {
 .devman_tm_header .menu ul li.download_cv a:hover {
   background-color: #142eb5;
 }
-.devman_tm_header.animate .menu ul li a {
+.devman_tm_header.animate .menu ul li a,
+.devman_tm_header.scrolled .menu ul li a {
   color: #000;
 }
-.devman_tm_header.animate .menu ul li.download_cv a {
+.devman_tm_header.animate .menu ul li.download_cv a,
+.devman_tm_header.scrolled .menu ul li.download_cv a {
   color: #fff;
+}
+.devman_tm_header.animate .menu ul li.current a,
+.devman_tm_header.scrolled .menu ul li.current a {
+  color: var(--main-color);
 }
 
 /*---------------------------------------------------*/
@@ -2882,7 +2951,11 @@ h6 {
     height: 40px;
   }
   .devman_tm_header {
-    padding: 25px 0px;
+    padding: 25px 30px;
+  }
+  .devman_tm_header.scrolled {
+    max-width: 1000px;
+    padding: 8px 18px 8px 35px;
   }
   .devman_tm_header.animate {
     padding: 20px 0px;
@@ -3192,6 +3265,24 @@ h6 {
 @media (max-width: 1040px) {
   .devman_tm_header {
     display: none;
+  }
+  /* Reset scrolled state on mobile/tablet */
+  .devman_tm_header.scrolled {
+    margin-top: 0;
+    padding: 20px;
+    border-radius: 0;
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    transform: none;
+    border-color: transparent;
+    box-shadow: none;
+  }
+  .header_overlay.active {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color: transparent;
   }
   .devman_tm_mobile_menu {
     display: block;
