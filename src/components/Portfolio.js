@@ -27,11 +27,13 @@ const Portfolio = () => {
                     />
                     <div className="content">
                       <div className="details">
-                        <span className="category">
-                          <a href="https://ideafloat.com/" target="_blank" rel="noopener noreferrer">Youtube</a>
-                        </span>
                         <span className="view_project">
-                          <a href="https://ideafloat.com/" target="_blank" rel="noopener noreferrer">
+                          <a
+                            href="https://ideafloat.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View the IdeaFloat project"
+                          >
                             View Project <i className="icon-right-big" />
                           </a>
                         </span>
@@ -52,11 +54,13 @@ const Portfolio = () => {
                     />
                     <div className="content">
                       <div className="details">
-                        <span className="category">
-                          <a href="https://www.goodaction.com/" target="_blank" rel="noopener noreferrer">Vimeo</a>
-                        </span>
                         <span className="view_project">
-                          <a href="https://www.goodaction.com/" target="_blank" rel="noopener noreferrer">
+                          <a
+                            href="https://www.goodaction.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View the GoodAction project"
+                          >
                             View Project <i className="icon-right-big" />
                           </a>
                         </span>
@@ -77,11 +81,13 @@ const Portfolio = () => {
                     />
                     <div className="content">
                       <div className="details">
-                        <span className="category">
-                          <a href="https://thrivelycare.com/home" target="_blank" rel="noopener noreferrer">Soundcloud</a>
-                        </span>
                         <span className="view_project">
-                          <a href="https://thrivelycare.com/home" target="_blank" rel="noopener noreferrer">
+                          <a
+                            href="https://thrivelycare.com/home"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View the Thrively Care project"
+                          >
                             View Project <i className="icon-right-big" />
                           </a>
                         </span>
@@ -94,7 +100,7 @@ const Portfolio = () => {
                     />
                   </div>
                 </li>
-                <li className="wow fadeInUp" data-wow-duration="1s">
+                {/* <li className="wow fadeInUp" data-wow-duration="1s">
                   <div className="list_inner">
                     <div
                       className="background_image"
@@ -102,11 +108,13 @@ const Portfolio = () => {
                     />
                     <div className="content">
                       <div className="details">
-                        <span className="category">
-                          <a href="https://radiansys.com/" target="_blank" rel="noopener noreferrer">Details</a>
-                        </span>
                         <span className="view_project">
-                          <a href="https://radiansys.com/" target="_blank" rel="noopener noreferrer">
+                          <a
+                            href="https://ideafloat.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View the IdeaFloat project"
+                          >
                             View Project <i className="icon-right-big" />
                           </a>
                         </span>
@@ -115,10 +123,10 @@ const Portfolio = () => {
                     <div className="overlay" />
                     <a
                       className="devman_tm_full_link"
-                      href="https://radiansys.com/" target="_blank" rel="noopener noreferrer"
+                      href="https://ideafloat.com/" target="_blank" rel="noopener noreferrer"
                     />
                   </div>
-                </li>
+                </li> */}
                 <div
                   className="shape_1 moving_effect"
                   data-direction="y"
