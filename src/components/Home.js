@@ -4,11 +4,10 @@ const homeData = {
   firstName: "Pawan",
   lastName: "Kumar",
   designation: "Frontend Engineer",
-  address: "India",
   img: "img/hero/2.jpg",
   bio: "I am a Frontend Engineer passionate about building scalable, user-focused web applications. I have a solid foundation in HTML, CSS, and JavaScript, and specialize in React and Next.js to craft dynamic, responsive interfaces. I focus on writing clean, efficient code and delivering seamless experiences that align with both user needs and business goals.",
   numberOfProject: 800,
-  numberofyear: 12,
+  numberofyear: 5,
 };
 
 const Home = () => {
@@ -26,9 +25,7 @@ const Home = () => {
                 <h3 className="name">
                   {homeData.firstName} {homeData.lastName}
                 </h3>
-                <h3 className="job">
-                  {homeData.designation} from {homeData.address}
-                </h3>
+                <h3 className="job">{homeData.designation}</h3>
                 <p className="text">{homeData.bio}</p>
                 <div className="buttons">
                   <div className="devman_tm_button">
