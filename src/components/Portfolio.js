@@ -27,16 +27,6 @@ const Portfolio = () => {
                     />
                     <div className="content">
                       <div className="details">
-                        <span className="view_project">
-                          <a
-                            href="https://ideafloat.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="View the IdeaFloat project"
-                          >
-                            View Project <i className="icon-right-big" />
-                          </a>
-                        </span>
                       </div>
                     </div>
                     <div className="overlay" />
@@ -44,6 +34,16 @@ const Portfolio = () => {
                       className="devman_tm_full_link"
                       href="https://ideafloat.com/" target="_blank" rel="noopener noreferrer"
                     />
+                    <span className="view_project">
+                      <a
+                        href="https://ideafloat.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View the IdeaFloat project"
+                      >
+                        View Project <i className="icon-right-big" />
+                      </a>
+                    </span>
                   </div>
                 </li>
                 <li className="wow fadeInUp" data-wow-duration="1s">
@@ -54,16 +54,6 @@ const Portfolio = () => {
                     />
                     <div className="content">
                       <div className="details">
-                        <span className="view_project">
-                          <a
-                            href="https://www.goodaction.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="View the GoodAction project"
-                          >
-                            View Project <i className="icon-right-big" />
-                          </a>
-                        </span>
                       </div>
                     </div>
                     <div className="overlay" />
@@ -71,6 +61,16 @@ const Portfolio = () => {
                       className="devman_tm_full_link"
                       href="https://www.goodaction.com/" target="_blank" rel="noopener noreferrer"
                     />
+                    <span className="view_project">
+                      <a
+                        href="https://www.goodaction.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View the GoodAction project"
+                      >
+                        View Project <i className="icon-right-big" />
+                      </a>
+                    </span>
                   </div>
                 </li>
                 <li className="wow fadeInUp" data-wow-duration="1s">
@@ -81,16 +81,6 @@ const Portfolio = () => {
                     />
                     <div className="content">
                       <div className="details">
-                        <span className="view_project">
-                          <a
-                            href="https://thrivelycare.com/home"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="View the Thrively Care project"
-                          >
-                            View Project <i className="icon-right-big" />
-                          </a>
-                        </span>
                       </div>
                     </div>
                     <div className="overlay" />
@@ -98,6 +88,16 @@ const Portfolio = () => {
                       className="devman_tm_full_link"
                       href="https://thrivelycare.com/home" target="_blank" rel="noopener noreferrer"
                     />
+                    <span className="view_project">
+                      <a
+                        href="https://thrivelycare.com/home"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View the Thrively Care project"
+                      >
+                        View Project <i className="icon-right-big" />
+                      </a>
+                    </span>
                   </div>
                 </li>
                 {/* <li className="wow fadeInUp" data-wow-duration="1s">

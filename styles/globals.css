@@ -65,3 +65,34 @@ html {
   height: unset;
   width: 100%;
 }
+
+/* Portfolio View Project Button */
+.devman_tm_portfolio .view_project a {
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  background: linear-gradient(to right, #142eb5, #fb503b);
+  padding: 15px 35px;
+  border-radius: 20px 0 0 0;
+  color: #fff;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-family-extra);
+  font-weight: 600;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.devman_tm_portfolio .view_project a:hover {
+  background: linear-gradient(to right, #fb503b, #142eb5);
+}
+
+.devman_tm_portfolio .view_project a i {
+  color: #fff !important;
+  top: 0 !important;
+}
