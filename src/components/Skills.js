@@ -39,12 +39,42 @@ const Skills = () => {
                 </div>
                 <div
                   className="skillsInner___ progress_inner"
-                  data-value={75}
+                  data-value={80}
                   data-color="#142eb5"
                 >
                   <span>
                     <span className="label">Next.js</span>
                     <span className="number">80%</span>
+                  </span>
+                  <div className="background">
+                    <div className="bar">
+                      <div className="bar_in" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="skillsInner___ progress_inner"
+                  data-value={80}
+                  data-color="#142eb5"
+                >
+                  <span>
+                    <span className="label">HTML</span>
+                    <span className="number">80%</span>
+                  </span>
+                  <div className="background">
+                    <div className="bar">
+                      <div className="bar_in" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="skillsInner___ progress_inner"
+                  data-value={75}
+                  data-color="#142eb5"
+                >
+                  <span>
+                    <span className="label">CSS</span>
+                    <span className="number">75%</span>
                   </span>
                   <div className="background">
                     <div className="bar">
@@ -79,6 +109,36 @@ const Skills = () => {
                   <span>
                     <span className="label">JavaScript</span>
                     <span className="number">90%</span>
+                  </span>
+                  <div className="background">
+                    <div className="bar">
+                      <div className="bar_in" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="skillsInner___ progress_inner"
+                  data-value={90}
+                  data-color="#142eb5"
+                >
+                  <span>
+                    <span className="label">Supabase</span>
+                    <span className="number">90%</span>
+                  </span>
+                  <div className="background">
+                    <div className="bar">
+                      <div className="bar_in" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="skillsInner___ progress_inner"
+                  data-value={60}
+                  data-color="#142eb5"
+                >
+                  <span>
+                    <span className="label">MongoDB</span>
+                    <span className="number">60%</span>
                   </span>
                   <div className="background">
                     <div className="bar">

@@ -116,7 +116,7 @@ const Contact = () => {
               </div>
               <div className="right wow fadeInRight" data-wow-duration="1s">
                 <ul>
-                  <li>
+                  {/* <li>
                     <div className="list_inner">
                       <div className="icon">
                         <i className="icon-location orangeText" />
@@ -126,7 +126,7 @@ const Contact = () => {
                         <span>20, Somewhere in world</span>
                       </div>
                     </div>
-                  </li>
+                  </li> */}
                   <li>
                     <div className="list_inner">
                       <div className="icon">
@@ -135,7 +135,7 @@ const Contact = () => {
                       <div className="short">
                         <h3>Email</h3>
                         <span>
-                          <a href="#">hello@devman.com</a>
+                          <a href="#">engineerpawangupta21@gmail.com</a>
                         </span>
                       </div>
                     </div>
@@ -147,7 +147,7 @@ const Contact = () => {
                       </div>
                       <div className="short">
                         <h3>Phone</h3>
-                        <span>+123 456 7890</span>
+                        <span>+91 8340519855</span>
                       </div>
                     </div>
                   </li>

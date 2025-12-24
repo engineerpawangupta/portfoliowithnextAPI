@@ -1280,21 +1280,55 @@ h6 {
   display: inline-block;
 }
 .devman_tm_portfolio ul li .view_project {
-  display: inline-block;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
 }
 .devman_tm_portfolio ul li .view_project a {
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: rgba(12, 18, 36, 0.55);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   color: #fff;
   font-family: var(--font-family-extra);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  display: inline-block;
+  line-height: 1;
+  transition: background 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease, color 0.3s ease;
+}
+.devman_tm_portfolio ul li .view_project a:hover,
+.devman_tm_portfolio ul li .view_project a:focus {
+  background: var(--main-color);
+  color: #0b1533;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(20, 46, 181, 0.35);
+}
+.devman_tm_portfolio ul li .view_project a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(20, 46, 181, 0.45);
 }
 .devman_tm_portfolio ul li .view_project i {
-  color: var(--main-color);
+  color: currentColor;
+  font-size: 18px;
   position: relative;
-  top: -1px;
+  top: 0;
+  transition: transform 0.3s ease;
+}
+.devman_tm_portfolio ul li .view_project a:hover i,
+.devman_tm_portfolio ul li .view_project a:focus i {
+  transform: translateX(4px);
 }
 .devman_tm_full_link {
   position: absolute;

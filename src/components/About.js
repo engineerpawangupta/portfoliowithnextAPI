@@ -2,10 +2,25 @@ const aboutData = {
   designation: "Frontend Engineer",
   title: "Building Scalable, User-Centric Applications that Drive Impact",
   text: [
-    "I am a Frontend Engineer with over 5 years of experience designing and developing high-performance, user-focused web applications. I specialize in building AI-powered platforms and scalable frontend architectures that solve real-world business problems and deliver measurable value.",
-    "I have led the development of IdeaFloat, an AI-driven business validation platform that integrates ChatGPT-3.5, ChatGPT-4, and external APIs to generate strategic insights based on market trends, customer feedback, and business analytics. By leveraging DataForSEO, the platform processes large-scale datasets to identify patterns, track SEO performance, and perform competitive analysis—enabling data-driven decision-making for startups and enterprises.",
-    "I have also contributed to the successful delivery of multiple full-stack platforms, including ALAUTUN, a comprehensive freight logistics solution connecting shippers, carriers, and owner-operators. My work included building carrier and shipper portals, integrating real-time chat (Stream), implementing Stripe payment processing, and configuring Firebase push notifications for real-time engagement.",
-    "Additionally, I developed Thrively Care, a healthcare platform that connects patients with licensed professionals and therapists. The platform supports online bookings, video consultations, and in-person appointment scheduling, delivering a seamless and secure patient experience.",
+    {
+      content:
+        "Frontend engineer with 5+ years building fast, accessible web apps that put users first.",
+    },
+    {
+      title: "IdeaFloat",
+      content:
+        "AI business validation platform using ChatGPT-3.5, ChatGPT-4, DataForSEO, and REST APIs to turn market signals into launch-ready plans.",
+    },
+    {
+      title: "ALAUTUN",
+      content:
+        "Freight logistics portals for carriers and shippers with Stream chat, Stripe payments, and Firebase alerts that keep teams aligned in real time.",
+    },
+    {
+      title: "Thrively Care",
+      content:
+        "Healthcare platform delivering secure bookings, video visits, and clinic scheduling with privacy-first workflows.",
+    },
   ],
   skillIcons: [
     { name: "joomla", icon: "img/svg/joomla.svg" },
@@ -55,8 +70,11 @@ const About = () => {
                 <h3>{aboutData.title}</h3>
               </div>
               <div className="text">
-                {aboutData.text.map((text, i) => (
-                  <p key={i}>{text}</p>
+                {aboutData.text.map((item, i) => (
+                  <p key={i}>
+                    {item.title ? <strong>{item.title}: </strong> : null}
+                    {item.content}
+                  </p>
                 ))}
               </div>
               <div className="devman_tm_button">
