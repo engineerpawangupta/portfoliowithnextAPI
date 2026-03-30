@@ -42,12 +42,12 @@ const Header = () => {
       <div className="container">
         <div className="header_inner">
           <div className="logo">
-            <a className="light" href="#">
+            {/* <a className="light" href="#">
               <img src="img/logo/logo.png" alt="" />
-            </a>
-            <a className="dark" href="#">
+            </a> */}
+            {/* <a className="dark" href="#">
               <img src="img/logo/dark.png" alt="" />
-            </a>
+            </a> */}
           </div>
           <div className="menu">
             <ul className="anchor_nav">
