@@ -13,8 +13,7 @@ const Portfolio = () => {
               <span>Portfolio</span>
               <h3>My Amazing Works</h3>
               <p>
-                Dliquip ex ea commo do conse namber onequa ute irure dolor in
-                reprehen derit in voluptate
+              A collection of my best projects, showcasing modern web development, clean design, and scalable solutions.
               </p>
             </div>
             <div className="portfolio_list">
